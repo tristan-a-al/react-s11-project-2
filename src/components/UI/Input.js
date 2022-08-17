@@ -3,9 +3,10 @@ import classes from "./Input.module.css";
 
 function Input(props) {
     return (
-        <React.Fragment>
-
-        </React.Fragment>
+        <div className={classes.input}>
+            <label htmlFor={props.input.id}>{props.label}</label>
+            <input {...props.input} />
+        </div>
     );
 }
 export default Input;
